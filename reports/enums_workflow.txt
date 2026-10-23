@@ -1,0 +1,26 @@
+# current flow
+# Client
+#    │
+#    ▼
+# JSON
+#    │
+#    ▼
+# FastAPI
+#    │
+#    ▼
+# TensorFlow
+
+# new flow
+# Client
+#    │
+#    ▼
+# Pydantic Validation
+#    │
+#    ▼
+# Business Validation
+#    │
+#    ▼
+# TensorFlow
+#    │
+#    ▼
+# Structured Response

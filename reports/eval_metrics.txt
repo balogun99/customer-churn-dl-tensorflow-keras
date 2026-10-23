@@ -1,0 +1,23 @@
+how to display eval metrics from the tranied file
+# access the metric
+# metric_dict["Accuracy"]
+# metric_dict["Precision"]
+# metric_dict["Recall"]
+# metric_dict["F1"]
+# metric_dict["ROC-AUC"]
+
+# display metrics results using index
+metrics = pd.read_csv("reports/evaluation_metrics.csv")
+metrics = metrics.set_index("Metric")
+# set the value
+accuracy = metrics.loc["Accuracy", "Value"]
+precision = metrics.loc["Precision", "Value"]
+recall = metrics.loc["Recall", "Value"]
+f1 = metrics.loc["F1 Score", "Value"]
+roc_auc = metrics.loc["ROC AUC", "Value"]
+# display them
+c1.metric("Accuracy", f"{accuracy:.2%}")
+c2.metric("Precision", f"{precision:.2%}")
+c3.metric("Recall", f"{recall:.2%}")
+c4.metric("F1 Score", f"{f1:.2%}")
+c5.metric("ROC AUC", f"{roc_auc:.2%}")

@@ -1,0 +1,14 @@
+# use this to run the API on the terminal
+# uvicorn api.main:app --reload
+
+# for API health check
+# visit -> http://127.0.0.1:8000/health/
+
+# for API VERSION endpoint
+# visit -> http://127.0.0.1:8000/health/version
+
+# for SwaggerUI
+# visit -> http://127.0.0.1:8000/docs
+
+# for ReDoc Documentation
+# visit -> http://127.0.0.1:8000/redoc
