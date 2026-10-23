@@ -22,3 +22,9 @@ models/*.pkl
 
 # Environment variables
 .env
+
+models/*.keras
+models/*.pkl
+
+!models/best_model.keras
+!models/preprocessor.pkl
